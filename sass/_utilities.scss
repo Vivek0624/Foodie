@@ -1,0 +1,152 @@
+
+
+.container {
+    max-width: 120rem;
+    height: auto;
+    margin: 0 auto; 
+    padding: 0 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;  
+}
+
+h1 {
+    margin: 0;
+    font-size: 520%; 
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  
+  h2 {
+   
+    font-size: 280%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+    color: var(--color-text-dark);
+  }
+  
+  h3 {
+    font-size: 140%;
+    margin: 0.6rem 0; 
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: var(--color-text-light);
+  }
+  
+  h2::after {
+    display: block;
+    height: .2rem;
+    background-color: var(--color-text-dark);
+    content: " ";
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+  
+  hr {
+      color: var(--color-white);
+      height: 1px;
+    
+     
+      margin: 2rem 8rem 2rem 8rem;
+  }
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: .66rem 0;
+}
+
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 2rem 0;
+    cursor: pointer;
+    font-size: 170%; 
+    background: var(--color-orange-light); 
+    color: var(--color-white);
+    border-radius: 5px;
+}
+
+.btn:hover,
+.btn:active {
+    transform: scale(.98);
+    background: var(--color-orange-light); 
+    color: var(--color-white);
+}
+
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.btn-outline--dark {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #c7c4c4;
+    padding: 1.2rem; 
+    transition: all .2s;
+
+    
+    @include response(phone) {    // width < 900?
+        display: block;
+      }
+}
+
+.btn-outline--dark:first-child {
+    border: 0.7px solid #c7c4c4;
+    background-color: var(--color-red-light);
+}
+
+.btn-outline--dark:hover {
+    background-color: #c7c4c4;
+    border: 0.7px solid #c7c4c4;
+}
+
+
+.btn--nav-1 {
+    font-size: 180%;
+    margin-left: 1.8rem;
+}
+
+.btn-about {
+    margin-left: 3rem;
+}
+
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 20px;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+
+.grid-3 {
+   grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    padding: 1rem;
+    background-color: var(--color-orange-light);
+} 
